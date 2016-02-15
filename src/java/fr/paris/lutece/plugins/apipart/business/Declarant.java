@@ -38,46 +38,84 @@ import java.io.Serializable;
 /**
  * This is the business class for the object InformationsFiscales
  */ 
-public class InformationsFiscales implements Serializable
+public class Declarant implements Serializable
 {
     private static final long serialVersionUID = 1L;
     
-    private String _strNumeroFiscal;
-    private String _strReferenceAvis;
-
+    private String _strNom;
+    private String _strNomNaissance;
+    private String _strPrenoms;
+    private String _strDateNaissance;
+    
     /**
-     * Returns the _strNumeroFiscal
-     * @return The _strNumeroFiscal
+     * Returns the _strNom
+     * @return The _strNom
      */
-    public String getNumeroFiscal( )
+    public String getNom( )
     {
-        return _strNumeroFiscal;
+        return _strNom;
     }
 
     /**
-     * Sets the _strNumeroFiscal
-     * @param strNumeroFiscal The _strNumeroFiscal
+     * Sets the _strNom
+     * @param strNom The _strNom
      */ 
-    public void setNumeroFiscal( String strNumeroFiscal )
+    public void setNom( String strNom )
     {
-        _strNumeroFiscal = strNumeroFiscal;
+        _strNom = strNom;
     }
     
     /**
-     * Returns the _strReferenceAvis
-     * @return The _strReferenceAvis
+     * Returns the _strNomNaissance
+     * @return The _strNomNaissance
      */
-    public String getReferenceAvis( )
+    public String getNomNaissance( )
     {
-        return _strReferenceAvis;
+        return _strNomNaissance;
     }
 
     /**
-     * Sets the _strReferenceAvis
-     * @param strReferenceAvis The _strReferenceAvis
+     * Sets the _strNomNaissance
+     * @param strNomNaissance The _strNomNaissance
      */ 
-    public void setReferenceAvis( String strReferenceAvis )
+    public void setNomNaissance( String strNomNaissance )
     {
-        _strReferenceAvis = strReferenceAvis;
+        _strNomNaissance = strNomNaissance;
+    }
+    
+    /**
+     * Returns the _strPrenoms
+     * @return The _strPrenoms
+     */
+    public String getPrenoms( )
+    {
+        return _strPrenoms;
+    }
+
+    /**
+     * Sets the _strPrenoms
+     * @param strPrenoms The _strPrenoms
+     */ 
+    public void setPrenoms( String strPrenoms )
+    {
+        _strPrenoms = strPrenoms;
+    }
+    
+    /**
+     * Returns the _strDateNaissance
+     * @return The _strDateNaissance
+     */
+    public String getDateNaissance( )
+    {
+        return _strDateNaissance;
+    }
+
+    /**
+     * Sets the _strDateNaissance
+     * @param strDateNaissance The _strDateNaissance
+     */ 
+    public void setDateNaissance( String strDateNaissance )
+    {
+        _strDateNaissance = strDateNaissance;
     }
 }

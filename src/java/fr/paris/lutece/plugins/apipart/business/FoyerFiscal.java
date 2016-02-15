@@ -38,46 +38,46 @@ import java.io.Serializable;
 /**
  * This is the business class for the object InformationsFiscales
  */ 
-public class InformationsFiscales implements Serializable
+public class FoyerFiscal implements Serializable
 {
     private static final long serialVersionUID = 1L;
     
-    private String _strNumeroFiscal;
-    private String _strReferenceAvis;
+    private int _nAnnee;
+    private String _strAdresse;
 
     /**
-     * Returns the _strNumeroFiscal
-     * @return The _strNumeroFiscal
+     * Returns the _nAnnee
+     * @return The _nAnnee
      */
-    public String getNumeroFiscal( )
+    public int getAnnee( )
     {
-        return _strNumeroFiscal;
+        return _nAnnee;
     }
 
     /**
-     * Sets the _strNumeroFiscal
-     * @param strNumeroFiscal The _strNumeroFiscal
+     * Sets the _nAnnee
+     * @param nAnnee The _nAnnee
      */ 
-    public void setNumeroFiscal( String strNumeroFiscal )
+    public void setAnnee( int nAnnee )
     {
-        _strNumeroFiscal = strNumeroFiscal;
+        _nAnnee = nAnnee;
     }
     
     /**
-     * Returns the _strReferenceAvis
-     * @return The _strReferenceAvis
+     * Returns the _strAdresse
+     * @return The _strAdresse
      */
-    public String getReferenceAvis( )
+    public String getAdresse( )
     {
-        return _strReferenceAvis;
+        return _strAdresse;
     }
 
     /**
-     * Sets the _strReferenceAvis
-     * @param strReferenceAvis The _strReferenceAvis
+     * Sets the _strAdresse
+     * @param strAdresse The _strAdresse
      */ 
-    public void setReferenceAvis( String strReferenceAvis )
+    public void setAdresse( String strAdresse )
     {
-        _strReferenceAvis = strReferenceAvis;
+        _strAdresse = strAdresse;
     }
 }
